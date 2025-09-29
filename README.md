@@ -1,6 +1,6 @@
 # Desarrollo de Aplicaciones Full Stack Python Trainee V2.0
 
-Repositorio asociado al curso **Desarrollo de Aplicaciones Full Stack Python Trainee V2.0**, impartido por **Sustantiva** en el marco del programa **Talento Digital para Chile – SENCE**.
+Repositorio asociado al curso **Desarrollo de Aplicaciones Full Stack Python Trainee V2.0**, impartido por **Sustantiva** en el marco del programa **Talento Digital para Chile - SENCE**.
 
 ## 📌 Descripción
 El curso está diseñado para entregar las habilidades necesarias para construir y mantener aplicaciones web **Full Stack** utilizando **Python** y frameworks asociados.  
@@ -47,5 +47,5 @@ Al finalizar, los participantes estarán preparados para:
 
 ---
 
-📖 **Versión oficial**: Resolución N°934 – 16/04/2021  
-🏫 **Sustantiva** | Programa **Talento Digital para Chile – SENCE**
+📖 **Versión oficial**: Resolución N°934 - 16/04/2021  
+🏫 **Sustantiva** | Programa **Talento Digital para Chile - SENCE**
