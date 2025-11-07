@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Contenedor fijo centrado de 960px */
+#contenedor {
+    width: 960px; /* Ancho fijo */
+    margin: 0 auto; /* Centrado horizontal */
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Encabezado principal centrado */
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Contenedor de columnas utilizando flexbox */
+#contenido {
+    display: flex;
+}
+
+/* Columna izquierda (aside) de 260px */
+#columna-izquierda {
+    width: 260px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+/* Columna derecha (section) de 700px */
+#columna-derecha {
+    width: 700px;
+    box-sizing: border-box;
+}
+
+/* Estilo de subtítulos */
+#columna-izquierda h2,
+#columna-derecha h2 {
+    color: #333333;
+    margin-top: 0;
+}
+
+/* Lista del contenido del libro en tres columnas */
+.lista-contenido {
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+
+    column-count: 3;
+    column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+}
