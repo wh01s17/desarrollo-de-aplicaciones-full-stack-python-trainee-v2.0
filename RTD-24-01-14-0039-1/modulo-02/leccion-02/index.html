@@ -3,32 +3,30 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
         <title>Mi pagina web</title>
     </head>
 
     <body>
-        <h1 style="color: blueviolet">Titulo 1</h1>
+        <h1>Titulo 1</h1>
         <p style="background-color: crimson">
             <!-- Imagen de internet -->
             <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0PDfyyodLAdbPjWwlzDCl2cVsAJdXsOUZu_z1K6uVBYyJsXP0AdiIWAxnQGqzYM9eTDcc-JOlxILrdfj4GqfHEkwFwaO_m0bER0TRQ&s=10"
                 alt="michi"
-                height="200px"
             />
         </p>
 
         <!-- Imagen local -->
-        <div
-            style="
-                display: flex;
-                justify-content: center;
-                background-color: aqua;
-            "
-        >
-            <img src="python-logo.png" alt="python-logo" height="200px" />
+        <div style="width: 100%; display: flex; justify-content: space-evenly">
+            <section>contenido</section>
+            <aside style="background-color: aqua; color: red">
+                <p>Python lasdflakjsdlfjalsdfj;sa;jdfsa</p>
+                <img src="python-logo.png" alt="python-logo" height="200px" />
+            </aside>
         </div>
 
-        <ul>
+        <ul id="element">
             <li>elemento 1</li>
             <li>elemento 2</li>
             <li>elemento 3</li>
@@ -50,12 +48,12 @@
                 type="text"
                 name="nombre"
                 value=""
-                placeholder="Ingresa tu nombre"
+                placeholder="ej: pepito"
             />
             <input type="date" name="" id="" />
             <input type="email" name="" id="" required />
             <input type="number" />
-            <button type="submit">Enviar</button>
+            <input type="submit" />
         </form>
     </body>
 </html>
