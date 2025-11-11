@@ -1,0 +1,29 @@
+p {
+    text-align: center;
+    text-decoration: underline green;
+    color: crimson;
+    font-size: larger;
+}
+
+body {
+    background-color: grey;
+}
+
+#negrita {
+    font-weight: bolder;
+}
+
+.center {
+    text-align: center;
+}
+
+#imagen {
+    text-align: center;
+    background-color: brown;
+}
+
+img {
+    border: 10px solid white;
+    padding: 20px;
+    margin: 30px;
+}

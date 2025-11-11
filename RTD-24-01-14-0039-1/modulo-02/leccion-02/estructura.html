@@ -1,0 +1,71 @@
+<!-- Estructura básica semántica: header, nav, main (section + aside) y footer -->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body
+        style="
+            /* El body tiene márgenes por defecto en la mayoría de los navegadores; los eliminamos para tener control total del layout (esto es opcional)*/
+            padding: 0;
+            margin: 0;
+        "
+    >
+        <header
+            style="
+                /* display: flex organiza los elementos hijos en una fila (dirección horizontal por defecto) */
+                display: flex;
+
+                /* alinea los elementos de manera horizontal */
+                justify-content: center;
+
+                /* alinea los elementos de manera vertical */
+                align-items: center;
+
+                /* alto del componente */
+                height: 80px;
+            "
+        >
+            HEADER
+        </header>
+        <nav
+            style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: yellow;
+                height: 30px;
+            "
+        >
+            NAVBAR
+        </nav>
+
+        <main
+            style="
+                display: flex;
+
+                /* Se calcula el alto total del contenido, restando el alto del header, navbar y footer */
+                height: calc(100dvh - (80px + 30px + 30px));
+                color: white;
+            "
+        >
+            <section style="width: 70%; background-color: red">SECTION</section>
+            <aside style="width: 30%; background-color: blue">ASIDE</aside>
+        </main>
+
+        <footer
+            style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: yellow;
+                height: 30px;
+            "
+        >
+            FOOTER
+        </footer>
+    </body>
+</html>
