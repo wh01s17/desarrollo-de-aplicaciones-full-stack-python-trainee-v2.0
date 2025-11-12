@@ -50,7 +50,13 @@ header {
 }
 
 #caracteristicas-iguana i {
+    transition: transform 0.2s ease-in-out;
     font-size: xx-large;
+}
+
+#caracteristicas-iguana i:hover {
+    transform: scale(1.5);
+    cursor: pointer;
 }
 
 #fotos-iguana {
@@ -67,6 +73,7 @@ footer {
     background-color: rgb(53, 47, 40);
     padding: 20px;
     text-align: center;
+    font-size: larger;
 }
 
 footer a {
