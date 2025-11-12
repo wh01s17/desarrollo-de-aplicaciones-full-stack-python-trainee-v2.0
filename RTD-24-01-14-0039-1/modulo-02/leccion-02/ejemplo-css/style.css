@@ -14,12 +14,8 @@ body {
 }
 
 .center {
-    text-align: center;
-}
-
-#imagen {
-    text-align: center;
-    background-color: brown;
+    display: flex;
+    justify-content: center;
 }
 
 img {

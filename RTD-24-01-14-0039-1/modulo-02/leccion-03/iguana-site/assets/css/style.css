@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.info-iguana {
+    display: flex;
+    padding: 50px 200px;
+}
+
+.texto-info-iguana {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.img-info-iguana {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#caracteristicas-iguana {
+    text-align: center;
+    padding: 30px 250px;
+    background-color: rgb(53, 47, 40);
+}
+
+#caracteristicas-iguana ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#caracteristicas-iguana h2 {
+    font-size: xx-large;
+    margin-bottom: 80px;
+}
+
+#caracteristicas-iguana i {
+    font-size: xx-large;
+}
+
+#fotos-iguana {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 150px;
+}
+
+#fotos-iguana img {
+    width: 300px;
+}
+
+footer {
+    background-color: rgb(53, 47, 40);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
