@@ -2,20 +2,24 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
 header {
     text-align: center;
 }
 
+/* Ejemplos con clases */
 .main-img {
     width: 100%;
 }
 
 .info-iguana {
     display: flex;
-    padding: 50px 150px;
+    padding: 4rem 10%;
     justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
 }
 
 .texto-info-iguana {
@@ -24,7 +28,6 @@ header {
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding-left: 150px;
 }
 
 .img-info-iguana {
@@ -34,6 +37,14 @@ header {
     width: 50%;
 }
 
+.img-info-iguana img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Ejemplos con IDs */
 #caracteristicas-iguana {
     text-align: center;
     padding: 30px 250px;
@@ -68,9 +79,17 @@ header {
 }
 
 #fotos-iguana img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
+#fotos-iguana img:hover {
+    transform: scale(1.05);
+}
+
+/* En etiqueta semántica */
 footer {
     background-color: rgb(53, 47, 40);
     padding: 20px;
