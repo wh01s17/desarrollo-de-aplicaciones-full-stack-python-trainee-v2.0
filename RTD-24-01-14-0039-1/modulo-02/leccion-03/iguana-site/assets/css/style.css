@@ -14,7 +14,8 @@ header {
 
 .info-iguana {
     display: flex;
-    padding: 50px 200px;
+    padding: 50px 150px;
+    justify-content: space-between;
 }
 
 .texto-info-iguana {
@@ -23,6 +24,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 50%;
+    padding-left: 150px;
 }
 
 .img-info-iguana {
