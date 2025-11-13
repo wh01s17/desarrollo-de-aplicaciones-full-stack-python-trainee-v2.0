@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header img {
+    width: 100%;
+}
+
+.info-iguana img {
+    max-width: 350px;
+}
+
+#caracteristicas-iguana {
+    background-color: rgb(53, 47, 40);
+}
+
+#caracteristicas-iguana i {
+    transition: transform 0.2s ease-in-out;
+    font-size: xx-large;
+}
+
+#caracteristicas-iguana i:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+#fotos-iguana img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#fotos-iguana img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgb(53, 47, 40);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
