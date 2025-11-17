@@ -1,0 +1,17 @@
+main {
+    background-image: url(../img/bg-hero.jpg);
+    background-size: cover;
+    height: 550px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+nav {
+    background-color: rgb(78, 78, 78);
+}
+
+#about i {
+    font-size: xx-large;
+}

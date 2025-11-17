@@ -50,7 +50,6 @@ Para esto, debes agregar en la página:
 - Una lista <ul> vacía que almacenará los comentarios.
 
 Cada vez que el usuario escriba un texto en el input y haga click en el botón, el programa debe:
-
 - Crear un nuevo elemento <li>.
 - Colocar dentro de ese <li> el texto escrito en el input.
 - Agregar el nuevo <li> al final de la lista <ul>.
