@@ -1,0 +1,12 @@
+#comentarioInput {
+    padding: 6px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+#listaComentarios li {
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    padding: 6px;
+    border-radius: 4px;
+}

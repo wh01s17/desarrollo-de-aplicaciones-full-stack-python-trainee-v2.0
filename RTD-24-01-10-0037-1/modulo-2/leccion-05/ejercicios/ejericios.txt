@@ -2,41 +2,58 @@
 Crea un <p id="mensaje">Hola</p>
 Al hacer click en un botón, cambiar el texto a “Bienvenido”.
 
+==================================================================================================
 2. Ocultar y mostrar un elemento
-Crea una imagen.
+Crea una imagen de 300px de ancho y 200px de alto.
 Crea dos botones: "Ocultar" y "Mostrar".
 Oculta y muestra la imagen modificando su display.
 
+==================================================================================================
 3. Alternar visibilidad
 Crea un <div> con texto.
 Un botón debe alternar entre mostrarlo y ocultarlo.
 
+==================================================================================================
 4. Eventos de teclado
 Crea un input y un párrafo vacío.
 Cada vez que escribas algo, se debe mostrar lo tipeado en el párrafo.
 
+==================================================================================================
 5. Modificar estilos desde JavaScript
 Crea un cuadro <div> de 200x200 px.
 Tres botones deben cambiar su color de fondo.
 
-6. Agregar y quitar clases
-Crea dos clases CSS: .activo y .inactivo.
+==================================================================================================
+6. Agregar y quitar clases + función aritmética
+Crea dos clases CSS: .activo (verde) y .inactivo (gris)
 Una tarjeta <div> debe alternar entre ambas al hacer click.
+Además, cada vez que hagas click, muestra en otro <p> cuántas veces ha sido clickeada la tarjeta.
+Implementa una función aritmética sumar(a, b) para llevar la cuenta.
 
-7. Recorrer elementos
-Crea una lista con varios <li>.
-Al presionar un botón, numera cada ítem agregando "1. ", "2. ", etc.
+==================================================================================================
+7. Recorrer elementos + operador ternario
+Numerar cada <li> recorriendo la lista y debes usar un ternario para cambiar el contenido dependiendo si el número es par o impar.
+Crea una lista <ul> con varios <li>.
+Un botón debe recorrer cada elemento y numerarlos:
+El resultado debe quedar así:
+1. Item (impar)
+2. Item (par)
+Para determinar si es par o impar, usa un operador ternario:
+numero % 2 === 0 ? "par" : "impar"
 
+==================================================================================================
 8. Crear y agregar elementos al DOM
-Crea un botón "Agregar comentario".
-Cada click debe generar un nuevo <p> dentro de un contenedor.
+Crea un pequeño sistema de comentarios.
+Para esto, debes agregar en la página:
+- Un input donde el usuario pueda escribir un comentario.
+- Un botón con el texto "Agregar comentario".
+- Una lista <ul> vacía que almacenará los comentarios.
 
-9. Consumir una API con fetch
-Usa la PokeAPI: https://pokeapi.co/api/v2/pokemon/pikachu.
-Muestra el nombre y el peso en el DOM.
+Cada vez que el usuario escriba un texto en el input y haga click en el botón, el programa debe:
 
-10. Delegación de eventos
-Crea un botón "Agregar ítem".
-Cada click agrega un <li> a una lista.
-Si haces click en cualquier <li>, este debe eliminarse.
-Usa un solo event listener en la lista.
+- Crear un nuevo elemento <li>.
+- Colocar dentro de ese <li> el texto escrito en el input.
+- Agregar el nuevo <li> al final de la lista <ul>.
+- Vaciar el input para que quede listo para el siguiente comentario.
+
+El resultado final es una lista que se va llenando con los comentarios ingresados por el usuario.

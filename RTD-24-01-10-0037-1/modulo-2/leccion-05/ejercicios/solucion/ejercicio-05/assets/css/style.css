@@ -1,0 +1,16 @@
+#contenido {
+    height: 200px;
+    width: 200px;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.amarillo {
+    background-color: yellow;
+}
