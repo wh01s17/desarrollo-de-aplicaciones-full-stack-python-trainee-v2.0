@@ -1,0 +1,45 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#onclickEvent {
+    height: 200px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.verde {
+    background-color: green;
+}
+
+.textoRojo {
+    color: red;
+}
+
+#mouseEvent {
+    display: inline-block;
+    cursor: pointer;
+}
+
+input {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.focus {
+    color: yellowgreen;
+}

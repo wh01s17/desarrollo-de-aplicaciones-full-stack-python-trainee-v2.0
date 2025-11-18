@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicios</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <main>
+            <section>
+                <div id="onclickEvent"></div>
+                <button onclick="changeBackground()">
+                    Cambiar color de fondo (aleatorio)
+                </button>
+            </section>
+
+            <section>
+                <p id="ondblclickEvent">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur dolor doloribus molestiae voluptatum magnam autem
+                    quia, nam eum aut placeat laboriosam dicta quibusdam quae
+                    atque laudantium! Odio nulla quae sapiente. Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Omnis, et,
+                    laudantium ipsam ad animi ex dolor incidunt, doloribus sequi
+                    molestias aliquid consectetur repudiandae aspernatur
+                    quaerat? Repellendus itaque molestias nam maxime? Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                    natus fugiat optio, iure repellendus quisquam voluptatum
+                    excepturi maiores, magnam expedita, voluptatem rem earum
+                    tempora ex porro culpa dolorem! Harum, eaque!
+                </p>
+                <button ondblclick="changeColor()">
+                    Cambiar color de texto (doble click)
+                </button>
+            </section>
+
+            <section>
+                <h1
+                    id="mouseEvent"
+                    onmouseover="welcomeMesasge()"
+                    onmouseout="resetMessage()"
+                >
+                    Hola
+                </h1>
+            </section>
+
+            <section>
+                <input type="text" id="focusEvent" value="Focus" />
+            </section>
+        </main>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
