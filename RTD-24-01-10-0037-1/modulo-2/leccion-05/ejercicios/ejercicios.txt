@@ -1,5 +1,5 @@
 1. Seleccionar un elemento y cambiar su texto
-Crea un <p id="mensaje">Hola</p>
+Crea un `<p id="mensaje">Hola</p>`
 Al hacer click en un botón, cambiar el texto a “Bienvenido”.
 
 ==================================================================================================
