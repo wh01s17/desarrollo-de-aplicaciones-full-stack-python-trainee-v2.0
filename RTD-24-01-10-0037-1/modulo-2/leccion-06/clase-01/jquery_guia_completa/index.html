@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía Completa jQuery – Métodos Básicos</title>
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- jQuery desde CDN (debe cargarse antes de script.js) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- Botón de menú hamburguesa (visible en móvil) -->
+    <button
+      id="btnMenu"
+      class="menu-toggle"
+      aria-label="Abrir menú de navegación"
+    >
+      ☰
+    </button>
+
+    <header class="site-header">
+      <h1>Guía Completa de Métodos jQuery</h1>
+      <p>Misma página, mismo HTML base, múltiples ejercicios prácticos.</p>
+    </header>
+
+    <div class="layout">
+      <!-- Navegación lateral (sidebar en escritorio, panel deslizable en móvil) -->
+      <nav id="sidebar" class="sidebar">
+        <h2 class="sidebar-title">Ejercicios</h2>
+        <ul class="sidebar-list">
+          <li>
+            <a href="#ej1_html_text" class="nav-link">1. html() y text()</a>
+          </li>
+          <li><a href="#ej2_attr" class="nav-link">2. attr()</a></li>
+          <li><a href="#ej3_val" class="nav-link">3. val()</a></li>
+          <li><a href="#ej4_dim" class="nav-link">4. width() y height()</a></li>
+          <li>
+            <a href="#ej5_insertAfter" class="nav-link">5. insertAfter()</a>
+          </li>
+          <li><a href="#ej6_append" class="nav-link">6. append()</a></li>
+          <li><a href="#ej7_prepend" class="nav-link">7. prepend()</a></li>
+          <li><a href="#ej8_after" class="nav-link">8. after()</a></li>
+          <li><a href="#ej9_remove" class="nav-link">9. remove()</a></li>
+          <li>
+            <a href="#ej10_integrador" class="nav-link">10. Integrador</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Contenido principal -->
+      <main class="main">
+        <!-- Sección 1: html() y text() -->
+        <section id="ej1_html_text" class="section">
+          <h2>Ejercicio 1 – html() y text()</h2>
+          <p class="section-desc">
+            Objetivo: mostrar la diferencia entre interpretar HTML
+            (<code>html()</code>) y mostrar texto plano (<code>text()</code>).
+          </p>
+
+          <div class="demo-box">
+            <p id="e1_contenido">
+              <em>Texto inicial con etiqueta &lt;em&gt;</em>
+            </p>
+          </div>
+
+          <button id="e1_btnHtml" class="btn">Cambiar con html()</button>
+          <button id="e1_btnText" class="btn">Cambiar con text()</button>
+
+          <p class="note">
+            Nota docente: con <code>html()</code> el navegador interpreta
+            etiquetas; con <code>text()</code> se muestran tal cual.
+          </p>
+        </section>
+
+        <!-- Sección 2: attr() -->
+        <section id="ej2_attr" class="section">
+          <h2>Ejercicio 2 – attr()</h2>
+          <p class="section-desc">
+            Objetivo: cambiar dinámicamente atributos como <code>src</code>,
+            <code>alt</code> y <code>href</code>.
+          </p>
+
+          <div class="demo-box demo-flex">
+            <img id="e2_foto" src="assets/img/2.jpg" alt="Imagen 1" />
+          </div>
+
+          <button id="e2_btnCambiarImg" class="btn">Cambiar imagen</button>
+
+          <div class="demo-box">
+            <p>
+              Enlace actual:
+              <a id="e2_enlace" href="https://www.google.com" target="_blank">
+                Ir a Google
+              </a>
+            </p>
+          </div>
+
+          <button id="e2_btnCambiarEnlace" class="btn">Cambiar enlace</button>
+        </section>
+
+        <!-- Sección 3: val() -->
+        <section id="ej3_val" class="section">
+          <h2>Ejercicio 3 – val()</h2>
+          <p class="section-desc">
+            Objetivo: leer y escribir valores en campos de formulario con
+            <code>val()</code>.
+          </p>
+
+          <label for="e3_nombre">Nombre:</label>
+          <input
+            type="text"
+            id="e3_nombre"
+            placeholder="Escriba su nombre"
+            class="input"
+          />
+
+          <div class="btn-row">
+            <button id="e3_btnMostrar" class="btn">Mostrar en pantalla</button>
+            <button id="e3_btnRellenar" class="btn">
+              Rellenar desde código
+            </button>
+          </div>
+
+          <div id="e3_resultado" class="demo-box">
+            Aquí se mostrará el resultado.
+          </div>
+        </section>
+
+        <!-- Sección 4: width() y height() -->
+        <section id="ej4_dim" class="section">
+          <h2>Ejercicio 4 – width() y height()</h2>
+          <p class="section-desc">
+            Objetivo: modificar el tamaño de un elemento y consultar sus
+            dimensiones actuales.
+          </p>
+
+          <div id="e4_caja" class="dim-box">Caja de prueba</div>
+
+          <div class="btn-row">
+            <button id="e4_btnAumentar" class="btn">Aumentar tamaño</button>
+            <button id="e4_btnDisminuir" class="btn">Disminuir tamaño</button>
+            <button id="e4_btnMedir" class="btn">Mostrar dimensiones</button>
+          </div>
+
+          <div id="e4_info" class="demo-box">
+            Dimensiones actuales: ancho y alto en píxeles.
+          </div>
+        </section>
+
+        <!-- Sección 5: insertAfter() -->
+        <section id="ej5_insertAfter" class="section">
+          <h2>Ejercicio 5 – insertAfter()</h2>
+          <p class="section-desc">
+            Objetivo: insertar elementos de lista después de un elemento base
+            utilizando <code>insertAfter()</code>.
+          </p>
+
+          <div class="demo-box">
+            <ul id="e5_lista">
+              <li id="e5_base">Tarea base</li>
+            </ul>
+          </div>
+
+          <button id="e5_btnAgregar" class="btn">Agregar nueva tarea</button>
+        </section>
+
+        <!-- Sección 6: append() -->
+        <section id="ej6_append" class="section">
+          <h2>Ejercicio 6 – append()</h2>
+          <p class="section-desc">
+            Objetivo: añadir contenido al final de un elemento usando
+            <code>append()</code>.
+          </p>
+
+          <div id="e6_contenedor" class="demo-box">
+            <p>Mensajes:</p>
+            <ul id="e6_listaMensajes"></ul>
+          </div>
+
+          <button id="e6_btnAgregarMensaje" class="btn">
+            Añadir mensaje con append()
+          </button>
+        </section>
+
+        <!-- Sección 7: prepend() -->
+        <section id="ej7_prepend" class="section">
+          <h2>Ejercicio 7 – prepend()</h2>
+          <p class="section-desc">
+            Objetivo: añadir contenido al principio de un elemento usando
+            <code>prepend()</code>.
+          </p>
+
+          <div id="e7_contenedor" class="demo-box">
+            <p>Historial:</p>
+            <ul id="e7_historial">
+              <li>Evento inicial</li>
+            </ul>
+          </div>
+
+          <button id="e7_btnNuevoEvento" class="btn">
+            Añadir evento al inicio con prepend()
+          </button>
+        </section>
+
+        <!-- Sección 8: after() -->
+        <section id="ej8_after" class="section">
+          <h2>Ejercicio 8 – after()</h2>
+          <p class="section-desc">
+            Objetivo: insertar contenido después de un elemento utilizando
+            <code>after()</code>.
+          </p>
+
+          <div class="demo-box">
+            <p id="e8_parrafo">
+              Párrafo base. Después de este texto aparecerán notas.
+            </p>
+          </div>
+
+          <button id="e8_btnAgregarNota" class="btn">
+            Insertar nota después del párrafo
+          </button>
+        </section>
+
+        <!-- Sección 9: remove() -->
+        <section id="ej9_remove" class="section">
+          <h2>Ejercicio 9 – remove()</h2>
+          <p class="section-desc">
+            Objetivo: eliminar elementos del DOM utilizando
+            <code>remove()</code>.
+          </p>
+
+          <div class="demo-box">
+            <ul id="e9_listaProductos">
+              <li>
+                Producto A
+                <button class="btn btn-small e9_btnEliminar">Eliminar</button>
+              </li>
+              <li>
+                Producto B
+                <button class="btn btn-small e9_btnEliminar">Eliminar</button>
+              </li>
+              <li>
+                Producto C
+                <button class="btn btn-small e9_btnEliminar">Eliminar</button>
+              </li>
+            </ul>
+          </div>
+
+          <p class="note">
+            Nota docente: compare <code>remove()</code> (elimina el nodo) con
+            <code>hide()</code> (solo oculta).
+          </p>
+        </section>
+
+        <!-- Sección 10: Integrador -->
+        <section id="ej10_integrador" class="section section-integrador">
+          <h2>Ejercicio 10 – Integrador de métodos</h2>
+          <p class="section-desc">
+            Objetivo: combinar varios métodos jQuery en un mini panel de
+            control.
+          </p>
+
+          <div class="integrador-layout">
+            <div class="panel">
+              <h3>Controles</h3>
+
+              <label for="e10_textoLibre">Texto para la caja:</label>
+              <input
+                type="text"
+                id="e10_textoLibre"
+                class="input"
+                placeholder="Escriba un texto"
+              />
+
+              <div class="btn-row">
+                <button id="e10_btnHtml" class="btn">
+                  Aplicar como html()
+                </button>
+                <button id="e10_btnText" class="btn">
+                  Aplicar como text()
+                </button>
+              </div>
+
+              <label for="e10_ancho">Ancho (px):</label>
+              <input
+                type="number"
+                id="e10_ancho"
+                class="input"
+                value="260"
+                min="100"
+              />
+
+              <label for="e10_alto">Alto (px):</label>
+              <input
+                type="number"
+                id="e10_alto"
+                class="input"
+                value="140"
+                min="60"
+              />
+
+              <div class="btn-row">
+                <button id="e10_btnDim" class="btn">Cambiar dimensiones</button>
+                <button id="e10_btnEliminar" class="btn">Eliminar caja</button>
+                <button id="e10_btnReiniciar" class="btn">Reiniciar</button>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Vista previa</h3>
+              <div id="e10_preview" class="preview-box">
+                <span id="e10_previewTexto">Texto inicial de ejemplo.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      Guía jQuery · @talentodigital · Un solo HTML base con múltiples
+      ejercicios.
+    </footer>
+
+    <!-- Script principal del proyecto -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
