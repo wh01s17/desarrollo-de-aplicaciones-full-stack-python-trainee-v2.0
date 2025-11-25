@@ -38,7 +38,7 @@ Los egresados podrán desempeñarse en organizaciones públicas y privadas de di
 ## 🚀 Tecnologías Clave
 
 -   **Lenguaje:** Python
--   **Frameworks:** Django (backend), librerías frontend (HTML, CSS, JavaScript)
+-   **Frameworks:** Django (backend), librerías frontend (HTML, CSS, JavaScript, jQuery, Bootstrap)
 -   **Bases de Datos:** Relacionales (SQL) y NoSQL
 -   **Control de Versiones:** Git/GitHub
 -   **Metodologías:** Bootcamp, trabajo colaborativo, metodologías ágiles
