@@ -17,9 +17,10 @@ print(type(dictionary.keys()))
 print(type(dictionary.values()))
 print(type(dictionary.items()))
 
-# 3. Método ger(), para consultar por clave inexistente
+# 3. Método get(), para consultar por clave un elemento, y si no existe, no muestra errores visibles
 
 dictionary = {"a": 1, "b": 2}
+print(dictionary.get("a"))
 print(dictionary.get("c"))
 
 # 4. Agregar y modificar claves
@@ -47,11 +48,27 @@ usuarios = [{"nombre": "Julieta", "edad": 44}, {"nombre": "Ursula", "edad": 43}]
 for user in usuarios:
     print(f"Nombre: {user['nombre']} | Edad: {user['edad']}")
 
-# 8. Construccion dunamica
+# 8. Construccion dinámica
 
-persona = {}
-persona["nombre"] = input("Ingrese su nombre: ")
-persona["edad"] = int(input("Ingrese su edad: "))
-persona["ciudad"] = input("Ingrese su ciudad: ")
+# persona = {}
+# persona["nombre"] = input("Ingrese su nombre: ")
+# persona["edad"] = int(input("Ingrese su edad: "))
+# persona["ciudad"] = input("Ingrese su ciudad: ")
 
-print("Registro ingresado:", persona)
+# print("Registro ingresado:", persona)
+
+# 9. Eliminar elemento con pop(), indicandole la clave
+dictionary = {"a": 1, "b": 2}
+valor = dictionary.pop("a")
+print(dictionary)
+
+# 10. Eliminar todo el contenido de un diccionario
+dictionary = {"a": 1, "b": 2, "c": 3}
+valor = dictionary.clear()
+print(dictionary)
+
+# 11. El método update() de los diccionarios, sirve para agregar o actualizar pares clave:valor desde otro diccionario u otra estructura compatible.
+dict_1 = {"a": 1, "b": 2}
+dict_2 = {"c": 3}
+dict_1.update(dict_2)
+print(dict_1)

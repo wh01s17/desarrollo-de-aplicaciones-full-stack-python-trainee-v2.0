@@ -23,3 +23,13 @@ s = {1, 2, 3}
 s.discard(2)
 s.discard(10)
 print(s)
+
+# 5. Crear una copia del conjunto
+s = {1, 2, 3, 4}
+s2 = s.copy()
+print(s, s2)
+
+# 6. Eliminar todos los elementos de un conjunto
+s = {1, 2, 3, 4}
+s.clear()
+print(s)
