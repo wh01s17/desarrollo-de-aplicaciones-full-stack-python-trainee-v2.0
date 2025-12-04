@@ -6,11 +6,19 @@ for i in range(1, altura + 1):
 
 print("\n")
 
-# Triangulo "equilatero"
+# Triangulo "equilatero" opcion 1
 for i in range(1, altura + 1):
     espacios = altura - i
     cant_estrellas = i * 2 - 1
     linea = (" " * espacios) + ("*" * cant_estrellas)
+    print(linea)
+
+print("\n")
+
+# Triangulo "equilatero" opcion 2
+for i in range(1, altura + 1):
+    cant_estrellas = i * 2 - 1
+    linea = ("*" * cant_estrellas).center(altura * 2)
     print(linea)
 
 print("\n")
