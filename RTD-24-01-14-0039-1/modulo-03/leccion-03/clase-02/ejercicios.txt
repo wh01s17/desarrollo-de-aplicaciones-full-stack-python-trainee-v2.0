@@ -1,0 +1,14 @@
+Ejercicio 1
+Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla todos los números impares desde 1 hasta ese número separados por comas.
+
+
+Ejercicio 2
+Escribir un programa que pida al usuario un número entero y muestre por pantalla un triángulo rectángulo como el de más abajo, de altura el número introducido.
+
+
+Ejercicio 3
+Escribir un programa que almacene la cadena de caracteres contraseña en una variable, pregunte al usuario por la contraseña hasta que introduzca la contraseña correcta.
+
+
+Ejercicio 4
+Escribir un programa que muestre por pantalla la tabla de multiplicar del 1 al 10.
