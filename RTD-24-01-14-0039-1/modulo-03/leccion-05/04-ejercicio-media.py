@@ -2,10 +2,9 @@ import math
 
 entrada = input("Ingresa números separados por comas: ")
 
-# Convertir a lista de floats
 numeros = []
 for n in entrada.split(","):
-    numero = float(n.strip())
+    numero = int(n.strip())
     numeros.append(numero)
 
 # Calcular media

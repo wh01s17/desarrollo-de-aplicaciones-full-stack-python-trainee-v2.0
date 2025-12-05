@@ -1,4 +1,3 @@
-# Crear diccionario de traducción
 entrada = input(
     "Ingresa las traducciones (formato palabra:traducción, separadas por comas):\n"
 )
