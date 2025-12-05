@@ -6,9 +6,8 @@ diccionario = {}
 
 pares = entrada.split(",")
 for par in pares:
-    if ":" in par:
-        esp, eng = par.split(":")
-        diccionario[esp.strip()] = eng.strip()
+    esp, eng = par.split(":")
+    diccionario[esp.strip()] = eng.strip()
 
 frase = input("Ingresa una frase en español a traducir:\n")
 palabras = frase.split()
