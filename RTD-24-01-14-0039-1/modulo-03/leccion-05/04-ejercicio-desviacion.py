@@ -11,12 +11,9 @@ for n in entrada.split(","):
 media = sum(numeros) / len(numeros)
 
 # Calcular desviación típica
-suma_cuadrados = 0
+suma_cuadrados = sum((num - media) ** 2 for num in numeros)
 
-for num in numeros:
-    suma_cuadrados += (num - media) ** 2
-
-varianza = suma_cuadrados / len(numeros)
+varianza = suma_cuadrados / (len(numeros) - 1)
 
 desviacion = math.sqrt(varianza)
 

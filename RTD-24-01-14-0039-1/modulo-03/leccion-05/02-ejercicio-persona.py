@@ -1,3 +1,4 @@
+print("REGISTRO DE USUARIOS")
 persona = {}
 
 while True:
@@ -11,5 +12,7 @@ while True:
     persona[clave] = valor
 
     print("Contenido actual del diccionario:")
-    print(persona)
+    for k, v in persona.items():
+        print(f"{k}: {v}")
+
     print("-" * 40)

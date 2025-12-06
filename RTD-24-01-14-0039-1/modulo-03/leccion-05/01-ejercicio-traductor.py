@@ -1,20 +1,18 @@
-entrada = input(
-    "Ingresa las traducciones (formato palabra:traducción, separadas por comas):\n"
-)
+palabras_usuario = input(
+    "Ingrese palabras en español e inglés separadas por 2 puntos, y cada par esp:eng separadas por comas:\n"
+).split(",")
 
-diccionario = {}
+diccionario_eng_esp = {}
 
-pares = entrada.split(",")
-for par in pares:
-    esp, eng = par.split(":")
-    diccionario[esp.strip()] = eng.strip()
+for par in palabras_usuario:
+    k_esp, v_eng = par.split(":")
+    diccionario_eng_esp[k_esp.strip()] = v_eng.strip()
 
-frase = input("Ingresa una frase en español a traducir:\n")
-palabras = frase.split()
+frase = input("Ingrese una frase en español para traducir:\n").split()
 
 traduccion = []
-for palabra in palabras:
-    traduccion.append(diccionario.get(palabra, palabra))
+for palabra in frase:
+    traduccion.append(diccionario_eng_esp.get(palabra.strip(), palabra.strip()))
 
 print("Traducción:")
 print(" ".join(traduccion))
