@@ -74,7 +74,7 @@ while True:
             print("🪙 Encontraste 10 monedas de oro!")
             inventario["oro"] += 10
         elif aventura == 2:
-            obj_random = random.randint(0, 9)
+            obj_random = random.randint(0, len(objetos) - 1)
             print(f"🎒 Obtuviste un {objetos[obj_random]}")
             inventario["objetos"].append(objetos[obj_random])
         else:
