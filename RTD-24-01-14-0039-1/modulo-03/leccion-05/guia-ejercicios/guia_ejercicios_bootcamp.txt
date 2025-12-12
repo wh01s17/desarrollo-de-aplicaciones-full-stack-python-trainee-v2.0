@@ -25,24 +25,6 @@
 # 4. Mostrar un ranking ordenado de mayor a menor poder de todos los personajes.
 
 
-
-###############################################################
-# 2) SIMULADOR DE TIENDA CON INVENTARIO DINÁMICO
-# -------------------------------------------------------------
-# Usar un diccionario como inventario:
-# inventario = {
-#     "manzana": 30,
-#     "pan": 15,
-#     "agua": 50
-# }
-#
-# Tareas:
-# 1. Permitir agregar productos con su cantidad.
-# 2. Permitir vender productos (restar cantidad), validando que exista y que haya stock suficiente.
-# 3. Si la cantidad queda en 0, eliminar automáticamente el producto.
-# 4. Mostrar un resumen final del inventario, el total de productos vendidos y el desglose por artículo.
-
-
 ###############################################################
 # 3) SISTEMA DE ENCUESTAS CON ANÁLISIS ESTADÍSTICO
 # -------------------------------------------------------------
@@ -74,47 +56,3 @@
 # 2. Utilizar listas y diccionarios para registrar objetos encontrados.
 # 3. Después de cada turno, mostrar el estado del jugador.
 # 4. Al finalizar, generar un resumen del recorrido (vida final, objetos obtenidos y total de oro).
-
-
-
-
-###############################################################
-# 5) MINI GESTOR DE BIBLIOTECA
-# -------------------------------------------------------------
-# La biblioteca parte con esta estructura:
-# libros = [
-#     {"titulo": "1984", "autor": "George Orwell", "prestado": False},
-#     {"titulo": "Fundación", "autor": "Isaac Asimov", "prestado": False},
-# ]
-#
-# Tareas:
-# 1. Permitir agregar nuevos libros.
-# 2. Permitir marcar un libro como prestado o devuelto.
-# 3. Generar una lista de los libros disponibles y otra de los prestados.
-# 4. Crear un buscador por título que ignore mayúsculas/minúsculas.
-# 5. Mostrar un resumen final con totales y listados.
-
-
-###############################################################
-# 6) SISTEMA DE TORNEO DE CARRERAS
-# -------------------------------------------------------------
-# Recibes una lista de corredores:
-# corredores = [
-#     {"nombre": "Luna", "velocidad": 8, "resistencia": 6},
-#     {"nombre": "Kai", "velocidad": 7, "resistencia": 9},
-#     {"nombre": "Rex", "velocidad": 9, "resistencia": 5}
-# ]
-#
-# Fórmula de rendimiento:
-# rendimiento = velocidad * 0.6 + resistencia * 0.4
-#
-# Tareas:
-# 1. Permitir agregar nuevos corredores.
-# 2. Simular una carrera: calcular rendimiento para cada participante.
-# 3. Ordenar y mostrar el podio (1°, 2°, 3°).
-# 4. Permitir al usuario buscar un corredor y mostrar su rendimiento.
-# 5. Generar un ranking final completo.
-
-
-
-
