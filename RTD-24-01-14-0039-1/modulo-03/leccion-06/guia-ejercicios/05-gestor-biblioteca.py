@@ -85,14 +85,8 @@ def buscador(libros: list):
 
 
 def listar_libros(libros: list):
-    disponibles = []
-    prestados = []
-
-    for libro in libros:
-        if libro.get("prestado"):
-            prestados.append(libro)
-        else:
-            disponibles.append(libro)
+    disponibles = list(filter(lambda libro: not libro.get("prestado"), libros))
+    prestados = list(filter(lambda libro: libro.get("prestado"), libros))
 
     print("Disponibles:", len(disponibles))
     for libro in disponibles:
