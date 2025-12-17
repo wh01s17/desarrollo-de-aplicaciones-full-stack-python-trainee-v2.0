@@ -1,4 +1,4 @@
-# Ejercicio 2 — Control de inventario de biblioteca
+# Ejercicio 2 - Control de inventario de biblioteca
 # Una biblioteca necesita llevar el control de sus libros disponibles para préstamo.
 # Cada libro tiene un título, autor y cantidad de ejemplares.
 
