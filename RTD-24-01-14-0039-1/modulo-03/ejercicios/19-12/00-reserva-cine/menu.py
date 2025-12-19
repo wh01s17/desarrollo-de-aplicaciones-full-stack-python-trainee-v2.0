@@ -1,4 +1,7 @@
-def menu_principal():
+def menu_principal() -> None:
+    """
+    Funcion que retorna el menu principal de la aplicacion
+    """
     print("""
 === Sistema de Reserva de Cine ===
 1) Ver cartelera de películas
