@@ -1,0 +1,5 @@
+Primera línea de texto del archivo1.txt
+Segunda línea de texto del archivo1.txt
+Tercera línea de texto del archivo1.txt
+Cuarta línea de texto del archivo1.txt
+Quinta línea de texto del archivo1.txt
