@@ -1,0 +1,3 @@
+Deben crear 3 objetos con 3 atributos y 2 métodos cada uno.
+Deben crear 2 instancias de cada objeto y llamar a sus atributos y métodos.
+Luego deben alterar el estado de la instancia cambiando un atributo de cada instancia.
