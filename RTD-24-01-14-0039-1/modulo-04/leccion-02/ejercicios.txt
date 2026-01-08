@@ -1,0 +1,146 @@
+===============================================
+EJERCICIOS POO: COMPOSICIÓN Y COLABORACIÓN
+Curso: Programación en Python
+===============================================
+
+Instrucciones generales:
+- Lee atentamente cada enunciado.
+- Implementa las clases solicitadas.
+- Respeta los nombres de clases y métodos.
+- Al final de cada ejercicio, prueba tu solución
+  creando objetos y mostrando resultados por pantalla.
+
+
+=================================================
+EJERCICIO 1: SISTEMA DE ATENCIÓN MÉDICA
+Tema: COMPOSICIÓN
+=================================================
+
+
+CONTEXTO:
+Se desea modelar un sistema simple de atención médica.
+Un Paciente tiene un Historial Médico que almacena
+diagnósticos y tratamientos.
+
+IMPORTANTE:
+- El historial médico NO debe existir sin el paciente.
+- El historial se crea dentro de la clase Paciente.
+Esto es un ejemplo de COMPOSICIÓN.
+
+
+1) Crea la clase HistorialMedico
+Atributos:
+- diagnosticos (lista)
+- tratamientos (lista)
+
+Métodos:
+- agregar_diagnostico(diagnostico)
+- agregar_tratamiento(tratamiento)
+- mostrar_historial()
+
+
+class HistorialMedico:
+    pass
+
+
+2) Crea la clase Paciente
+Atributos:
+- nombre
+- edad
+- historial (instancia de HistorialMedico)
+
+Métodos:
+- mostrar_info()
+
+
+class Paciente:
+    pass
+
+
+3) PRUEBAS (descomenta cuando tengas tu solución)
+
+paciente1 = Paciente("Juan Pérez", 45)
+paciente1.historial.agregar_diagnostico("Hipertensión")
+paciente1.historial.agregar_diagnostico("Diabetes tipo 2")
+paciente1.historial.agregar_tratamiento("Medicamento A")
+
+paciente1.mostrar_info()
+
+
+=================================================
+EJERCICIO 2: SISTEMA DE PEDIDOS
+Tema: COLABORACIÓN ENTRE CLASES
+=================================================
+
+
+CONTEXTO:
+Se desea modelar un sistema de pedidos para una tienda.
+Un Pedido trabaja con un Cliente y varios Productos.
+
+IMPORTANTE:
+- Cliente y Producto pueden existir de forma independiente.
+- Pedido solo USA estas clases.
+Esto es un ejemplo de COLABORACIÓN.
+
+
+1) Crea la clase Producto
+Atributos:
+- nombre
+- precio
+
+Métodos:
+- mostrar_info()
+
+
+class Producto:
+    pass
+
+
+2) Crea la clase Cliente
+Atributos:
+- nombre
+
+Métodos:
+- mostrar_info()
+
+
+class Cliente:
+    pass
+
+
+3) Crea la clase Pedido
+Atributos:
+- cliente (instancia de Cliente)
+- productos (lista de Producto)
+
+Métodos:
+- agregar_producto(producto)
+- calcular_total()
+- mostrar_resumen()
+
+
+class Pedido:
+    pass
+
+
+4) PRUEBAS (descomenta cuando tengas tu solución)
+
+producto1 = Producto("Teclado", 15000)
+producto2 = Producto("Mouse", 8000)
+
+cliente1 = Cliente("María González")
+
+pedido1 = Pedido(cliente1)
+pedido1.agregar_producto(producto1)
+pedido1.agregar_producto(producto2)
+
+pedido1.mostrar_resumen()
+
+
+=================================================
+PREGUNTAS DE REFLEXIÓN
+=================================================
+1) ¿Por qué el HistorialMedico es un ejemplo de composición?
+2) ¿Puede un Producto existir sin un Pedido? ¿Por qué?
+3) ¿Qué diferencia principal observas entre ambos ejercicios?
+
