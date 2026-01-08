@@ -64,14 +64,17 @@ class Pedido:
         self.productos: list[Producto] = []
 
     def agregar_producto(self, producto: Producto) -> None:
+        if not isinstance(producto, Producto):
+            raise TypeError("producto debe ser una instancia de Producto")
+
         self.productos.append(producto)
 
     def calcular_total(self) -> int:
-        return sum([p.precio for p in self.productos])
+        return sum(p.precio for p in self.productos)
 
     def mostrar_resumen(self) -> None:
-        print("\nDatos de pedido")
-        print("---------------")
+        print("\nResumen del pedido")
+        print("------------------")
         self.cliente.mostrar_info()
         for p in self.productos:
             p.mostrar_info()
