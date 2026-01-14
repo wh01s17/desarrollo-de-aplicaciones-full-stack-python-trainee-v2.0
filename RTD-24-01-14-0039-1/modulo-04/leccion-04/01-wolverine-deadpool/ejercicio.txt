@@ -1,0 +1,137 @@
+"""
+===========================================================
+🧩 EJERCICIO INTEGRADOR – PROGRAMACIÓN ORIENTADA A OBJETOS
+===========================================================
+
+⚔️ Deadpool vs Wolverine: Batalla Mutante en Python ⚔️
+
+-----------------------------------------------------------
+📌 CONTEXTO
+-----------------------------------------------------------
+En este ejercicio deberás desarrollar un juego de combate por
+turnos en consola, inspirado en los personajes Deadpool y
+Wolverine.
+
+Ambos personajes son mutantes y comparten ciertas
+características comunes, pero poseen habilidades y comportamientos
+particulares que los diferencian dentro del combate.
+
+El objetivo principal es modelar correctamente el dominio del
+problema utilizando Programación Orientada a Objetos (POO),
+aplicando los conceptos vistos en el módulo.
+
+-----------------------------------------------------------
+🏗️ MODELO DE CLASES OBLIGATORIO
+-----------------------------------------------------------
+El sistema debe estar compuesto obligatoriamente por las
+siguientes 4 clases:
+
+1) Personaje          -> Clase base
+2) Wolverine          -> Hereda de Personaje
+3) Deadpool           -> Hereda de Personaje
+4) CampoDeBatalla     -> Orquesta el combate
+
+-----------------------------------------------------------
+🧬 DESCRIPCIÓN DE CLASES Y RESPONSABILIDADES
+-----------------------------------------------------------
+
+🧍 Clase Personaje (CLASE BASE)
+
+Representa a cualquier mutante que participe en el combate.
+
+Características comunes:
+- Nombre
+- Puntos de vida
+- Fuerza de ataque base
+- Estado (vivo / derrotado)
+
+Comportamiento esperado:
+- Atacar a otro personaje
+- Recibir daño
+- Verificar si sigue con vida
+- Mostrar su estado actual
+
+⚠️ Esta clase NO debe utilizarse directamente para el combate
+final, solo como base para los personajes concretos.
+
+
+🐺 Clase Wolverine (HEREDA DE Personaje)
+
+Representa a Wolverine, caracterizado por su resistencia y
+factor de curación.
+
+Características diferenciadoras:
+- Mayor cantidad de vida base
+- Daño físico constante (sin aleatoriedad)
+- Regeneración automática de vida en cada turno
+
+Comportamiento especial:
+- Recupera una pequeña cantidad de vida de forma constante
+- Su ataque es estable y predecible
+
+Wolverine destaca por su DURABILIDAD.
+
+
+🤡 Clase Deadpool (HEREDA DE Personaje)
+
+Representa a Deadpool, impredecible y caótico.
+
+Características diferenciadoras:
+- Menor vida base que Wolverine
+- Ataques con daño variable (aleatorio)
+- Posibilidad de golpes críticos o fallos
+
+Comportamiento especial:
+- Puede infligir daño extra o fallar ataques
+- Su regeneración es inestable, pero potencialmente más alta
+
+Deadpool destaca por su IMPREVISIBILIDAD.
+
+
+🏟️ Clase CampoDeBatalla
+
+Representa el entorno donde ocurre la pelea.
+
+Responsabilidades principales:
+- Recibir a los personajes combatientes
+- Controlar los turnos
+- Ejecutar el flujo del combate
+- Mostrar los eventos en consola
+- Determinar cuándo termina la pelea y quién es el ganador
+
+⚠️ El CampoDeBatalla NO ataca ni recibe daño.
+Su rol es coordinar la interacción entre los objetos,
+fomentando la COLABORACIÓN entre clases.
+
+-----------------------------------------------------------
+🎯 OBJETIVO DEL EJERCICIO
+-----------------------------------------------------------
+Simular una pelea completa entre Deadpool y Wolverine,
+asegurando:
+
+- Uso correcto de herencia
+- Polimorfismo en ataques y habilidades
+- Encapsulamiento de atributos
+- Colaboración entre objetos
+- Separación clara de responsabilidades
+
+-----------------------------------------------------------
+⏱️ TIEMPO ESTIMADO
+-----------------------------------------------------------
+2 a 3 horas
+
+-----------------------------------------------------------
+🧑‍💻 CONDICIONES GENERALES
+-----------------------------------------------------------
+- El programa debe ejecutarse en consola
+- No se permite lógica principal fuera de métodos
+- El diseño será evaluado tanto como el funcionamiento
+- El uso de POO es obligatorio
+
+-----------------------------------------------------------
+“No es solo una pelea… es un buen diseño orientado a objetos.”
+===========================================================
+"""
+
+# A partir de aquí comienza tu implementación.
+# Define las clases solicitadas y desarrolla la lógica del combate.
