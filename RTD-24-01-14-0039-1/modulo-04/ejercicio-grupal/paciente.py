@@ -1,5 +1,5 @@
 class Paciente:
-    def __init__(self, nombre, apellido, peso, talla):
+    def __init__(self, nombre: str, apellido: str, peso: int, talla: int) -> None:
         self.nombre = nombre
         self.apellido = apellido
         self.peso = peso
@@ -9,7 +9,7 @@ class Paciente:
         talla_m = self.talla / 100
         self.imc = round(peso_kg / (talla_m**2), 1)
 
-    def clasificar_imc(self):
+    def clasificar_imc(self) -> str:
         if self.imc <= 18.5:
             return "Bajo peso"
         elif self.imc < 25:

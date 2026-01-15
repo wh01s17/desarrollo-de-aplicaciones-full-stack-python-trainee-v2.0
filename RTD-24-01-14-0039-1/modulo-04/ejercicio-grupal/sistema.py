@@ -4,12 +4,14 @@ from paciente import Paciente
 
 class Sistema:
     def __init__(
-        self, archivo_entrada="ejercicio.csv", archivo_salida="output_file.csv"
-    ):
+        self,
+        archivo_entrada: str = "ejercicio.csv",
+        archivo_salida: str = "output_file.csv",
+    ) -> None:
         self.archivo_entrada = archivo_entrada
         self.archivo_salida = archivo_salida
 
-    def agregar_paciente(self, paciente: Paciente):
+    def agregar_paciente(self, paciente: Paciente) -> None:
         with open(
             self.archivo_entrada, "a", encoding="utf8", newline=""
         ) as csv_entrada:
@@ -22,7 +24,7 @@ class Sistema:
                 ]
             )
 
-    def procesar_archivo(self):
+    def procesar_archivo(self) -> None:
         CABECERA = [
             "Nombre",
             "Apellido",
@@ -51,7 +53,7 @@ class Sistema:
                 )
 
     @staticmethod
-    def obtener_lista(archivo):
+    def obtener_lista(archivo: str) -> list:
         with open(archivo, encoding="utf8") as csv_archivo:
             archivo = csv.reader(csv_archivo, delimiter=";")
             next(archivo)
@@ -67,7 +69,7 @@ class Sistema:
 
         return int(input("Ingrese opción:\n"))
 
-    def run(self):
+    def run(self) -> None:
         while True:
             opcion = self.menu()
 
@@ -76,8 +78,8 @@ class Sistema:
             elif opcion == 1:
                 nombre = input("Nombre:\n")
                 apellido = input("Apellido:\n")
-                peso = input("Peso (g):\n")
-                talla = input("Talla (cm):\n")
+                peso = input("Peso (g):\n").strip()
+                talla = input("Talla (cm):\n").strip()
                 paciente = Paciente(nombre, apellido, int(peso), int(talla))
                 self.agregar_paciente(paciente)
             elif opcion == 2:
