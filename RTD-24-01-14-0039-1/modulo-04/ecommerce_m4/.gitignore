@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+
+# Archivos generados por la aplicación
+catalogo.txt
+ordenes.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+.env
+
+# Distribución / empaquetado
+dist/
+build/
+*.egg-info/
