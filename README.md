@@ -17,9 +17,9 @@ Los egresados podrán desempeñarse en organizaciones públicas y privadas de di
 
 ## 📝 Requisitos de Ingreso
 
--   Licencia de Enseñanza Media completa.
--   Manejo computacional a nivel usuario.
--   Aprobación de test de selección (raciocinio lógico, comprensión verbal y aptitud).
+- Licencia de Enseñanza Media completa.
+- Manejo computacional a nivel usuario.
+- Aprobación de test de selección (raciocinio lógico, comprensión verbal y aptitud).
 
 ## 📚 Módulos del Curso (Total: 462 horas)
 
@@ -37,26 +37,26 @@ Los egresados podrán desempeñarse en organizaciones públicas y privadas de di
 
 ## 🚀 Tecnologías Clave
 
--   **Lenguaje:** Python
--   **Frameworks:** Django (backend), librerías frontend (HTML, CSS, JavaScript, jQuery, Bootstrap)
--   **Bases de Datos:** Relacionales (SQL) y NoSQL
--   **Control de Versiones:** Git/GitHub
--   **Metodologías:** Bootcamp, trabajo colaborativo, metodologías ágiles
+- **Lenguaje:** Python
+- **Frameworks:** Django (backend), librerías frontend (HTML, CSS, JavaScript, jQuery, Bootstrap)
+- **Bases de Datos:** Relacionales (SQL) y NoSQL
+- **Control de Versiones:** Git/GitHub
+- **Metodologías:** Bootcamp, trabajo colaborativo, metodologías ágiles
 
 ## 🎓 Requisitos de Aprobación
 
--   Contar con al menos un 40% de horas efectivas de conexión en la plataforma (185 hrs).
--   Haber completado al menos el 90% de las actividades obligatorias.
--   Obtener una evaluación final equivalente a nota 4.0 o superior.
+- Contar con al menos un 40% de horas efectivas de conexión en la plataforma (185 hrs).
+- Haber completado al menos el 90% de las actividades obligatorias.
+- Obtener una evaluación final equivalente a nota 4.0 o superior.
 
 ## 👩‍🎓 Perfil de Egreso
 
 Al finalizar, los participantes estarán preparados para:
 
--   Construir aplicaciones web completas (frontend + backend).
--   Integrar y gestionar bases de datos en proyectos Python/Django.
--   Trabajar en equipos de desarrollo aplicando metodologías ágiles.
--   Desarrollar un portafolio digital con proyectos reales.
+- Construir aplicaciones web completas (frontend + backend).
+- Integrar y gestionar bases de datos en proyectos Python/Django.
+- Trabajar en equipos de desarrollo aplicando metodologías ágiles.
+- Desarrollar un portafolio digital con proyectos reales.
 
 ---
 
