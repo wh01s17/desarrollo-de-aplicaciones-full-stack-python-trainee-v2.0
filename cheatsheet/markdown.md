@@ -36,6 +36,8 @@
 
 _Italic_
 
+*Italic 2*
+
 ~~Strikethrough~~
 ```
 
@@ -44,6 +46,8 @@ _Italic_
 **Bold**
 
 _Italic_
+
+_Italic 2_
 
 ~~Strikethrough~~
 
@@ -85,6 +89,8 @@ _Italic_
 
 ## 4. Enlaces
 
+#### 4.1 Enlace externo
+
 **Código:**
 
 ```text
@@ -94,6 +100,18 @@ _Italic_
 **Visualización:**
 
 [Link Text](https://google.com)
+
+#### 4.2 Enlace externo con tooltip personalizado
+
+**Código:**
+
+```text
+[Link Text](https://google.com "Tooltip :D")
+```
+
+**Visualización:**
+
+[Link Text](https://google.com "Tooltip :D")
 
 ## 5. Código
 
@@ -110,6 +128,8 @@ _Italic_
 `Inline code`
 
 ### 5.2 Bloques de código
+
+En GitHub, puedes usar cualquier lenguaje que Rouge/Linguist
 
 **Código python:**
 
@@ -147,14 +167,14 @@ console.log("Hola Mundo");
 
 ````text
 ```java
-    System.out.println('Hola Mundo');
+    System.out.println("Hola Mundo");
 ```
 ````
 
 **Visualización:**
 
 ```java
-System.out.println('Hola Mundo');
+System.out.println("Hola Mundo");
 ```
 
 ## 6. Citas
@@ -201,6 +221,8 @@ System.out.println('Hola Mundo');
 
 ## 9. Imágenes
 
+La imagen debe estar en la misma carpeta o usar una URL.
+
 **Código:**
 
 ```text
@@ -210,3 +232,9 @@ System.out.println('Hola Mundo');
 **Visualización:**
 
 ![Alt text](image.jpg)
+
+## 10. Errores comunes
+
+- Olvidar el espacio después de #
+- No dejar línea en blanco antes/después de listas
+- Mezclar tabs y espacios en listas anidadas
