@@ -2,7 +2,7 @@
 
 ## Crear el entorno virtual
 
-Desde el directorio del proyecto, crea un entorno virtual con:
+Desde el directorio donde crearás tu proyecto, crea un entorno virtual con:
 
 ```bash
 python -m venv venv
@@ -167,7 +167,7 @@ Después de crear la app, debes registrarla en el archivo:
 miproyecto/settings.py
 ```
 
-Agrega "main" dentro de la lista `INSTALLED_APPS`:
+Agrega `main` (o el nombre de tu app), dentro de la lista `INSTALLED_APPS`:
 
 ```python
 INSTALLED_APPS = [
@@ -186,13 +186,35 @@ INSTALLED_APPS = [
 
 Un proyecto puede contener múltiples aplicaciones.
 
-## Ejecutar el servidor de desarrollo
+## Crear y aplicar migraciones
 
-Ingresa al directorio creado y levanta el servidor:
+Cada vez que defines o modificas modelos en `models.py`, debes generar y aplicar migraciones para que los cambios se reflejen en la base de datos.
+
+### Generar migraciones
 
 ```bash
-cd miproyecto
+python manage.py makemigrations
 ```
+
+Este comando analiza los cambios en los modelos y crea archivos dentro de la carpeta `migrations/` de cada aplicación.
+
+### Aplicar migraciones
+
+```bash
+python manage.py migrate
+```
+
+Este comando ejecuta las migraciones pendientes y actualiza la estructura de la base de datos.
+
+### Ver migraciones pendientes
+
+Si deseas verificar el estado de las migraciones:
+
+```bash
+python manage.py showmigrations
+```
+
+## Ejecutar el servidor de desarrollo
 
 ```bash
 python manage.py runserver
