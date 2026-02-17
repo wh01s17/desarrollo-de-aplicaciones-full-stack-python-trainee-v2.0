@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola soy el index</h1>
+
+    {% for k,producto in productos.items %}
+        <div>
+            <h2><a href="detalle_producto?id_producto={{k}}">{{producto.nombre }}</a></h2>
+            <p>{{ producto.precio }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
